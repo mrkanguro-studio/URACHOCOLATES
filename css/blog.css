@@ -1,0 +1,248 @@
+/* ==========================================================================
+   BLOG.CSS — Exclusivo de blog.html
+   Artículo destacado + lista secundaria, recoloreado en la paleta
+   marrón / cobre / dorado del resto del sitio.
+   ========================================================================== */
+
+.blog-seccion {
+    background-color: var(--crema);
+    padding: 90px 8% 110px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.blog-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+}
+
+/* --- IMÁGENES --- */
+.blog-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+}
+
+.blog-img-wrapper-chico {
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+    border-radius: 12px;
+}
+
+.blog-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(35%);
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), filter 0.6s ease;
+}
+
+.animate-hover-card:hover .blog-foto {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+/* --- ARTÍCULO DESTACADO --- */
+.blog-destacado {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(44,26,17,.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.blog-destacado:hover {
+    box-shadow: 0 20px 40px rgba(44,26,17,.14);
+}
+
+.categoria-tag {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, var(--cobre), var(--dorado));
+    color: #1a0f08;
+    padding: 7px 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 20px;
+}
+
+.destacado-info {
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.blog-meta-txt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #a3907e;
+}
+
+.destacado-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: var(--marron-oscuro);
+    margin: 0;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+
+.blog-destacado:hover h3 {
+    color: var(--cobre);
+}
+
+.destacado-info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    color: #6f6053;
+    line-height: 1.7;
+    margin: 0 0 10px 0;
+}
+
+/* --- BOTÓN LEER MÁS --- */
+.btn-leer-mas {
+    align-self: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cobre);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icono-flecha {
+    transition: transform 0.3s ease;
+}
+
+.btn-leer-mas:hover .icono-flecha {
+    transform: translateX(5px);
+}
+
+/* --- LISTA SECUNDARIA --- */
+.blog-secundarios-lista {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-secundaria {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(44,26,17,.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-secundaria:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(44,26,17,.12);
+}
+
+.secundaria-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.categoria-tag-chico {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    color: var(--cobre);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.secundaria-info h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    color: var(--marron-oscuro);
+    margin: 0;
+    line-height: 1.4;
+    transition: color 0.3s ease;
+}
+
+.card-secundaria:hover h4 {
+    color: var(--cobre);
+}
+
+/* --- RESPONSIVO --- */
+@media (max-width: 900px) {
+    .blog-container {
+        flex-direction: column;
+    }
+    .blog-img-wrapper {
+        height: 260px;
+    }
+    .card-secundaria {
+        flex-direction: column;
+    }
+    .blog-img-wrapper-chico {
+        width: 100%;
+        height: 180px;
+    }
+}
+
+
+/* --- AJUSTES EXCLUSIVOS PARA MÓVIL --- */
+@media (max-width: 768px) {
+
+    /* 1. Reduce el espacio del padding de la sección para evitar desfasamientos */
+    .blog-seccion {
+        padding-top: 130px; /* Aumenta o disminuye este valor según el alto de tu cabecera */
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+
+    /* 2. Ajusta el menú para que los elementos se acomoden centrados y compactos */
+    .cabecera {
+        padding: 10px 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .menu a {
+        font-size: 0.8rem; /* Reduce ligeramente la letra del menú en celular */
+    }
+
+    /* 3. Ajusta las tarjetas del blog para pantallas pequeñas */
+    .blog-img-wrapper {
+        height: 220px;
+    }
+
+    .destacado-info {
+        padding: 20px;
+    }
+
+    .card-secundaria {
+        flex-direction: row; /* Mantiene la imagen pequeña al lado del texto */
+    }
+
+    .blog-img-wrapper-chico {
+        width: 90px;
+        height: 90px;
+    }
+}

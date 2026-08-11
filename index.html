@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Urachocolates: chocolate artesanal elaborado con cacao peruano de especialidad. Descubre nuestras tabletas, historia y origen.">
+
+    <title>URACHOCOLATES | Chocolate Artesanal Peruano</title>
+
+    <link rel="stylesheet" href="css/estilo01.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Montserrat:wght@300;400;500;600&family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="cabecera">
+
+<div class="logo">
+    <img src="imagenes/urachocoloates.jpg" alt="Logo Urachocolates - Chocolate artesanal peruano">
+    <h2 style="font-family: 'Playfair Display', serif; font-weight: 700;">URACHOCOLATES</h2>
+</div>
+
+        <nav class="menu">
+            <a href="index.html" class="activo">INICIO</a>
+            <a href="nosotros.html">NOSOTROS</a>
+            <a href="productos.html">PRODUCTOS</a>
+            <a href="blog.html">BLOG</a>
+            <a href="contacto.html">CONTACTO</a>
+
+            <div class="buscador">
+
+    <i class="fa-solid fa-magnifying-glass" id="btn-buscar"></i>
+
+    <input 
+    type="text" 
+    id="input-busqueda" 
+    placeholder="Buscar chocolates..."
+    >
+
+</div>
+            <a href="carrito.html" class="carrito-icon">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-badge" id="cart-badge">0</span>
+            </a>
+        </nav> 
+
+    </header>
+
+<!-- ========================================= -->
+<!-- HERO ESTILO "COOKIE": TIPOGRAFÍA GIGANTE   -->
+<!-- CON FOTO RECORTADA DENTRO DEL TEXTO        -->
+<!-- ========================================= -->
+<section class="hero-cookie">
+
+    <!-- CAPA DE IMÁGENES DE FONDO AUTOMÁTICAS -->
+    <div class="hero-bg-slideshow">
+        <div class="hero-bg-slide" style="background-image: url('imagenes/dulces2.jpg');"></div>
+        <div class="hero-bg-slide" style="background-image: url('imagenes/dulces3.jpg');"></div>
+        <div class="hero-bg-slide" style="background-image: url('imagenes/dulces4.jpg');"></div>
+    </div>
+    <!-- CAPA OSCURA PARA ASEGURAR LEGIBILIDAD DEL TEXTO -->
+    <div class="hero-bg-overlay"></div>
+
+    <!-- MANCHAS Y CONTENIDO ACTUAL (NO SE TOCA NADA AQUÍ) -->
+    <div class="hero-cookie-mancha mancha-1"></div>
+    <div class="hero-cookie-mancha mancha-2"></div>
+
+    <h1 class="hero-mega-title">
+        SAB<span class="letra-foto"><img src="imagenes/barra4.jpg" alt="Chocolate artesanal Urachocolates"></span>R ÚNICO
+    </h1>
+
+    <p class="hero-cookie-sub">CHOCOLATE ARTESANAL PERUANO EN CADA BOCADO</p>
+
+    <div class="hero-cookie-botones">
+        <a href="productos.html" class="btn-pill-solido">Productos</a>
+        <a href="contacto.html" class="btn-pill-borde">Pedir ahora</a>
+    </div>
+
+    <div class="hero-cookie-favoritos">
+        <div class="favoritos-fotos">
+            <img src="imagenes/barra3.jpg" alt="">
+            <img src="imagenes/barra.png" alt="">
+            <img src="imagenes/negrito1.jpg" alt="">
+            <a href="productos.html" class="favoritos-flecha">
+                <i class="fa-solid fa-arrow-up-right"></i>
+            </a>
+        </div>
+        <p>Chocolate artesanal 100% peruano.<br>Hecho con pasión y tradición.</p>
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- FRANJA INFERIOR: DOS ADELANTOS + SCROLL    -->
+<!-- ========================================= -->
+<section class="hero-teasers">
+
+    <a href="productos.html" class="teaser-card">
+        <img src="imagenes/barra4.jpg" alt="Chocolate Sal de Maras">
+        <div class="teaser-info">
+            <h3>Chocolate Sal de Maras</h3>
+            <p>Chocolate artesanal elaborado con cacao peruano y sal de Maras.</p>
+        </div>
+    </a>
+
+    <div class="scroll-indicador">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Desliza para descubrir más</span>
+    </div>
+
+    <a href="productos.html" class="teaser-card">
+        <img src="imagenes/negrito2.jpg" alt="Chocolate Premium">
+        <div class="teaser-info">
+            <h3>Chocolate Premium</h3>
+            <p>Elaborado con cacao fino de aroma 70% cacao.</p>
+        </div>
+    </a>
+
+</section>
+
+<section class="about">
+
+    <video autoplay muted loop playsinline class="about-video">
+        <source src="video/chiquita.mp4" type="video/mp4">
+    </video>
+
+
+
+    <div class="about-content">
+
+        <h2>QUIÉNES SOMOS</h2>
+
+        <p>
+            En Urachocolates trabajamos con cacao peruano de alta calidad,
+            transformándolo en experiencias únicas para quienes disfrutan del
+            verdadero chocolate artesanal.
+        </p>
+
+        <a href="productos.html" class="btn-about">
+            Ver productos
+        </a>
+
+    </div>
+
+</section>
+
+<section class="history">
+
+    <div class="history-content">
+
+        <h2>NUESTRA HISTORIA</h2>
+
+        <p>
+            Urachocolates nace con la misión de compartir la riqueza del cacao
+            peruano. Desde nuestros inicios buscamos combinar tradición,
+            calidad e innovación para ofrecer chocolates que representen el
+            verdadero sabor del Perú.
+        </p>
+
+        <a href="blog.html" class="btn-history">
+            Ver promociones
+        </a>
+
+    </div>
+
+    <div class="history-img">
+        <img src="imagenes/history.jpg" alt="Nuestra Historia">
+    </div>
+
+</section>
+
+<!-- ========================================= -->
+<!-- PRODUCTOS DESTACADOS -->
+<!-- ========================================= -->
+
+<section class="products" id="productos">
+
+    <div class="products-header">
+
+        <span>NUESTRA COLECCIÓN</span>
+
+        <h2>NUESTROS PRODUCTOS</h2>
+
+        <p>
+            Descubre una selección de nuestros chocolates artesanales elaborados
+            con cacao peruano de la más alta calidad.
+        </p>
+
+    </div>
+
+
+    <div class="products-slider">
+
+        <!-- Flecha izquierda -->
+        <button class="slider-btn prev" id="prevBtn">
+            <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+
+        <!-- Carrusel -->
+        <div class="products-wrapper">
+
+            <div class="products-track">
+
+                <!-- PRODUCTO 1 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="imagenes/barra4.jpg" alt="Chocolate Sal de Maras">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Chocolate Sal de Maras</h3>
+
+                        <p>
+                            Chocolate artesanal elaborado con cacao peruano y sal de Maras.
+                        </p>
+
+                        <span class="price">
+                            S/.20.00
+                        </span>
+
+                        <a href="productos.html" class="btn-producto">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCTO 2 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="imagenes/barra3.jpg" alt="Chocolate Café">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Chocolate con Café</h3>
+
+                        <p>
+                            La intensidad del cacao peruano combinada con café seleccionado.
+                        </p>
+
+                        <span class="price">
+                            S/.22.00
+                        </span>
+
+                        <a href="productos.html" class="btn-producto">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCTO 3 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="imagenes/barra.png" alt="Chocolate Nibs">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Chocolate Nibs</h3>
+
+                        <p>
+                            Una experiencia única con trozos naturales de cacao.
+                        </p>
+
+                        <span class="price">
+                            S/.20.00
+                        </span>
+
+                        <a href="productos.html" class="btn-producto">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCTO 4 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="imagenes/negrito1.jpg" alt="Chocolate Aguaymanto">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Chocolate Aguaymanto</h3>
+
+                        <p>
+                            El equilibrio perfecto entre cacao y fruta peruana.
+                        </p>
+
+                        <span class="price">
+                            S/.24.00
+                        </span>
+
+                        <a href="productos.html" class="btn-producto">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCTO 5 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="imagenes/negrito2.jpg" alt="Chocolate Premium">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Chocolate Premium</h3>
+
+                        <p>
+                            Elaborado con cacao fino de aroma 70% cacao.
+                        </p>
+
+                        <span class="price">
+                            S/.25.00
+                        </span>
+
+                        <a href="productos.html" class="btn-producto">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- PRODUCTO 6 -->
+                <div class="product-card">
+
+                    <div class="product-image">
+
+                        <img src="imagenes/negrito3.jpg" alt="Chocolate Blanco">
+
+                    </div>
+
+                    <div class="product-info">
+
+                        <h3>Chocolate Blanco</h3>
+
+                        <p>
+                            Cremoso, suave y elaborado artesanalmente.
+                        </p>
+
+                        <span class="price">
+                            S/.18.00
+                        </span>
+
+                        <a href="productos.html" class="btn-producto">
+                            Ver producto
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Flecha derecha -->
+        <button class="slider-btn next" id="nextBtn">
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+    </div>
+
+
+    <!-- PUNTOS -->
+
+    <div class="slider-dots">
+
+        <span class="dot active"></span>
+
+        <span class="dot"></span>
+
+    </div>
+
+
+    <!-- BOTÓN -->
+
+    <div class="products-footer">
+
+        <a href="productos.html" class="btn-all-products">
+
+            Ver todos los productos
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </a>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+
+            <img src="imagenes/urachocoloates.jpg" alt="Logo Urachocolates - Chocolate artesanal peruano">
+
+            <h2>URACHOCOLATES</h2>
+
+            <p>
+                Chocolate artesanal elaborado con cacao peruano,
+                llevando tradición y sabor a cada tableta.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Enlaces</h3>
+
+            <a href="index.html">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h3>Contacto</h3>
+
+            <p>
+                <i class="fa-solid fa-envelope"></i>
+                urachocolates@gmail.com
+            </p>
+
+            <p>
+                <i class="fa-solid fa-phone"></i>
+                +51 918 880 861
+            </p>
+
+        </div>
+
+        <div class="footer-social">
+
+            <h3>Síguenos</h3>
+
+<div class="social-icons">
+
+    <a href="https://www.facebook.com/urachocolates" target="_blank">
+        <i class="fa-brands fa-facebook-f"></i>
+    </a>
+
+    <a href="https://www.instagram.com/urachocolates/" target="_blank">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <a href="https://www.tiktok.com/@urachocolates" target="_blank">
+        <i class="fa-brands fa-tiktok"></i>
+    </a>
+
+</div>
+
+
+            <div class="footer-extra-links">
+
+<a href="libro.html">
+    <i class="fa-solid fa-book"></i>
+    Libro de Reclamaciones
+</a>
+
+<a href="privacidad.html">
+    <i class="fa-solid fa-shield-halved"></i>
+    Políticas de Privacidad
+</a>
+
+<a href="terminos.html">
+    <i class="fa-solid fa-file-contract"></i>
+    Términos y Condiciones
+</a>
+
+</div>
+
+        </div>
+
+    </div>
+
+<div class="footer-bottom">
+
+    <p>© 2026 URACHOCOLATES | Todos los derechos reservados</p>
+
+    <div class="footer-creditos">
+        <img src="imagenes/zegel nuevo.png" alt="Zegel" class="footer-creditos-logo">
+        <p class="footer-creditos-nombres">Aaron Alejandro De La Sota Correa &amp; Kevin Hair Huamani Huauya</p>
+        <p class="footer-creditos-datos">7mo Ciclo &nbsp;—&nbsp; Diseño y Gestión de Marcas</p>
+    </div>
+
+</div>
+
+</div>
+
+</footer>
+
+
+<!-- From Uiverse.io by Gaurang7717 --> 
+<button class="Btn">
+  <div class="sign">
+    <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+      <path
+        d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+      ></path>
+    </svg>
+  </div>
+
+  <div class="text">Whatsapp</div>
+</button>
+
+
+
+<script>
+
+const botonBuscar = document.getElementById("btn-buscar");
+const inputBusqueda = document.getElementById("input-busqueda");
+
+
+botonBuscar.addEventListener("click",()=>{
+
+    inputBusqueda.classList.toggle("activo");
+
+    if(inputBusqueda.classList.contains("activo")){
+        inputBusqueda.focus();
+    }
+
+});
+
+
+</script>
+
+<!-- Tu vinculación al archivo externo justo aquí abajo -->
+<script src="js/estilo01.js"></script>
+
+<script src="js/carrito.js"></script>
+
+<script src="js/animaciones.js"></script>
+
+</body>
+</html>
+

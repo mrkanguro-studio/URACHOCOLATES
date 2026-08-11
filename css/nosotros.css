@@ -1,0 +1,203 @@
+/* ==========================================================================
+   NOSOTROS.CSS — Exclusivo de nosotros.html (valores + nuestra ruta)
+   ========================================================================== */
+
+/* =======================================================
+   VALORES (Nosotros)
+======================================================= */
+
+.valores{
+    background:var(--crema);
+    padding:100px 8%;
+}
+
+.valores-header{
+    text-align:center;
+    max-width:650px;
+    margin:0 auto 60px;
+}
+
+.valores-header span{
+    color:var(--cobre);
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size:13px;
+}
+
+.valores-header h2{
+    font-family:'Playfair Display', serif;
+    font-size:40px;
+    color:var(--marron-oscuro);
+    margin:14px 0 16px;
+}
+
+.valores-header p{
+    color:#7a6c5f;
+    line-height:1.8;
+}
+
+.valores-grid{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:30px;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.valor-card{
+    background:#fff;
+    border-radius:16px;
+    padding:40px 28px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(44,26,17,.06);
+    transition:.35s;
+}
+
+.valor-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(44,26,17,.14);
+}
+
+.valor-card i{
+    width:70px;
+    height:70px;
+    margin:0 auto 22px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+    background:linear-gradient(135deg, var(--cobre), var(--dorado));
+    color:#1a0f08;
+    font-size:26px;
+}
+
+.valor-card h3{
+    font-family:'Playfair Display', serif;
+    font-size:20px;
+    color:var(--marron-oscuro);
+    margin-bottom:12px;
+}
+
+.valor-card p{
+    color:#7a6c5f;
+    font-size:14px;
+    line-height:1.7;
+}
+
+/* =======================================================
+   TIMELINE (Nosotros — nuestra ruta)
+======================================================= */
+
+.ruta{
+    background:var(--negro-cacao);
+    padding:110px 8%;
+    color:white;
+}
+
+.ruta-header{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.ruta-header span{
+    color:var(--dorado);
+    letter-spacing:2px;
+    font-weight:700;
+    text-transform:uppercase;
+    font-size:13px;
+}
+
+.ruta-header h2{
+    font-family:'Playfair Display', serif;
+    font-size:40px;
+    margin-top:12px;
+}
+
+.ruta-linea{
+    max-width:900px;
+    margin:0 auto;
+    position:relative;
+    padding-left:40px;
+    border-left:2px solid rgba(223,178,108,0.3);
+}
+
+.ruta-paso{
+    position:relative;
+    padding-bottom:55px;
+}
+
+.ruta-paso:last-child{
+    padding-bottom:0;
+}
+
+.ruta-paso::before{
+    content:"";
+    position:absolute;
+    left:-46px;
+    top:2px;
+    width:14px;
+    height:14px;
+    border-radius:50%;
+    background:var(--dorado);
+    box-shadow:0 0 0 5px rgba(223,178,108,0.15);
+}
+
+.ruta-paso span{
+    font-family:'Montserrat', sans-serif;
+    color:var(--dorado);
+    font-weight:700;
+    font-size:13px;
+    letter-spacing:1px;
+}
+
+.ruta-paso h3{
+    font-family:'Playfair Display', serif;
+    font-size:22px;
+    margin:8px 0 10px;
+}
+
+.ruta-paso p{
+    color:var(--texto-tenue);
+    line-height:1.8;
+    max-width:600px;
+}
+
+@media(max-width:768px){
+    .valores-grid{grid-template-columns:1fr 1fr;}
+}
+
+@media(max-width:560px){
+    .valores-grid{grid-template-columns:1fr;}
+}
+
+
+/* --- AJUSTE RESPONSIVO PARA MÓVIL --- */
+@media (max-width: 768px) {
+
+    /* 1. Genera espacio superior para evitar que el menú tape el título */
+    .about {
+        padding-top: 140px !important;
+        min-height: auto; /* Permite que el contenedor ajuste su altura libremente */
+    }
+
+    /* 2. Ajusta los márgenes y texto del contenido sobre el vídeo */
+    .about-content {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .about-content h2 {
+        font-size: 28px;
+    }
+
+    /* 3. Ajusta el espaciado interno de las siguientes secciones */
+    .valores,
+    .ruta {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}

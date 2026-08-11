@@ -1,0 +1,118 @@
+/* ==========================================================================
+   PRIVACIDAD.CSS — Exclusivo de privacidad.html (bloques legales)
+   ========================================================================== */
+
+/* =======================================================
+   TERMINOS / PRIVACIDAD (paginas legales)
+======================================================= */
+
+.legal-sec{
+    background:#fff;
+    padding:90px 8% 110px;
+}
+
+.legal-wrap{
+    max-width:860px;
+    margin:0 auto;
+}
+
+.legal-wrap > p.legal-intro{
+    color:#7a6c5f;
+    line-height:1.8;
+    margin-bottom:50px;
+    font-size:15px;
+}
+
+.terminos-bloque{
+    margin-bottom:38px;
+    padding-bottom:38px;
+    border-bottom:1px solid rgba(44,26,17,0.08);
+}
+
+.terminos-bloque:last-child{
+    border-bottom:none;
+}
+
+.terminos-bloque h2{
+    font-family:'Playfair Display', serif;
+    font-size:22px;
+    color:var(--marron-oscuro);
+    margin-bottom:14px;
+
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.terminos-bloque h2 span{
+    width:36px;
+    height:36px;
+    flex-shrink:0;
+    border-radius:50%;
+    background:linear-gradient(135deg, var(--cobre), var(--dorado));
+    color:#1a0f08;
+    font-family:'Montserrat', sans-serif;
+    font-size:14px;
+    font-weight:800;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.terminos-bloque p,
+.terminos-bloque li{
+    color:#6f6053;
+    line-height:1.85;
+    font-size:14.5px;
+}
+
+.terminos-bloque ul{
+    margin:12px 0 0 20px;
+}
+
+.terminos-bloque li{
+    margin-bottom:8px;
+}
+
+.legal-actualizado{
+    text-align:center;
+    color:#a3907e;
+    font-size:13px;
+    margin-top:60px;
+}
+
+/* Ajuste equilibrado para centrar el texto */
+.page-hero.hero-paginas-legales {
+    padding-top: 80px !important;    /* Le da espacio arriba respecto a la barra */
+    padding-bottom: 60px !important; /* Le da espacio abajo */
+    min-height: auto !important;
+}
+
+/* Restablece la posición vertical */
+.hero-paginas-legales .page-hero-content {
+    transform: translateY(0) !important; /* Vuelve a posición natural */
+}
+
+/* =======================================================
+   AJUSTE RESPONSIVE (PRIVACIDAD)
+======================================================= */
+
+/* Para Escritorio / Pantalla grande */
+.page-hero.hero-paginas-legales {
+    padding-top: 110px !important;    /* Espaciado moderado para pantalla grande */
+    padding-bottom: 50px !important;
+    min-height: auto !important;
+}
+
+.hero-paginas-legales .page-hero-content {
+    transform: none !important;
+    margin-top: 0 !important;
+}
+
+/* Para Celular / Vista reducida */
+@media (max-width: 768px) {
+    .page-hero.hero-paginas-legales {
+        padding-top: 140px !important; /* Baja el texto para despejarlo del menú móvil */
+        padding-bottom: 40px !important;
+    }
+}
